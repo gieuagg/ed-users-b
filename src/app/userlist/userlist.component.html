@@ -1,0 +1,15 @@
+<!-- unames = ["Ann", "Nik", "Alice", "Dan"]; -->
+
+<h3>User List</h3>
+
+<!-- {{ unames | json }} -->
+
+<!-- <ul>
+    <li *ngFor="let userName of unames">{{ userName }}</li>
+</ul> -->
+
+<!-- <div *ngFor="let userName of unames">
+    <app-user [uname]="userName"></app-user>
+</div> -->
+
+<app-user [uname]="userName" *ngFor="let userName of unames"></app-user>
